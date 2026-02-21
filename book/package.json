@@ -1,4 +1,5 @@
 {
+  "homepage": "https://danish0313.github.io/books",
   "name": "book",
   "private": true,
   "version": "0.0.0",
@@ -12,9 +13,6 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
   },
-   
-  "homepage": "https://danish0313.github.io/books",
-  
   "dependencies": {
     "@headlessui/react": "^2.2.9",
     "@heroicons/react": "^2.2.0",

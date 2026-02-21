@@ -7,6 +7,7 @@ import tailwindcss from "@tailwindcss/vite";
 
 export default defineConfig({
   plugins: [react(), tailwindcss()],
+  base: "/books/", 
   test: {
     globals: true,           // Allows using expect without importing
     environment: "jsdom",    // Simulate browser DOM

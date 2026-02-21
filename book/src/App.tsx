@@ -30,7 +30,7 @@ export default function App() {
     <BrowserRouter>
       <div className="bg-gray-100 min-h-screen min-w-screen">
         <Routes>
-          <Route path="/books" element={<Home books={booksArray} />} />
+          <Route path="/" element={<Home books={booksArray} />} />
           <Route path="/book/:id" element={<BookDetails books={booksArray} />} />
           <Route path="/add" element={<AddBook addBook={addBook} />} />
         </Routes>

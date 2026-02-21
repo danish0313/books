@@ -9,7 +9,6 @@ import { mockBooks } from "./data/books";
 export default function App() {
   const [books, setBooks] = useState<Book[]>(mockBooks);
 
-
   // This function is passed to AddBook
   const addBook = (book: Book) => {
     if (book) {

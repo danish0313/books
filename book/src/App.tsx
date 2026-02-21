@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import BookDetails from "./pages/BookDetails";
 import AddBook from "./pages/AddBook";
@@ -27,7 +27,6 @@ export default function App() {
 
   const booksArray = storedBooks ? JSON.parse(storedBooks) : mockBooks;
   return (
-    <BrowserRouter>
       <div className="bg-gray-100 min-h-screen min-w-screen">
         <Routes>
           <Route path="/" element={<Home books={booksArray} />} />
@@ -35,6 +34,6 @@ export default function App() {
           <Route path="/add" element={<AddBook addBook={addBook} />} />
         </Routes>
       </div>
-    </BrowserRouter>
+
   );
 }
